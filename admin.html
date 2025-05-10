@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardwareBase - Admin Panel</title>
+    <link rel="stylesheet" href="css/admin-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-logo">
+                <a href="index.html" style="margin-right: 20px;">
+                    <img src="assets/logo.png" alt="HardwareBase Logo" style="height:32px;">
+                </a>
+                <span>Mon-Sat: 9:00 AM - 5:30 PM</span> &nbsp;|&nbsp; <span>Call us: (00) 1234 5678</span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header">
+        <button class="hamburger-menu" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="mobile-search-bar">
+            <input type="text" placeholder="Search here...">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="mobile-header-right">
+            <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+            <a href="login.html" class="account"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+    <nav class="mobile-menu" aria-label="Mobile menu">
+        <div class="mobile-menu-navbar">
+            <div class="mobile-search-bar">
+                <input type="text" placeholder="Search here...">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+            <a href="login.html" class="account"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="HardwareBase Logo">
+                <span>HardwareBase</span>
+            </div>
+            <button class="close-mobile-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu-list">
+            <li><a href="catalog.html">Laptops <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Desktop PCs <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Networking Devices <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Printers & Scanners <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">PC Parts <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">All Other Products <span class="menu-arrow">&rsaquo;</span></a></li>
+        </ul>
+    </nav>
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="container">
+            <div class="admin-title">
+                HardwareBase Admin
+            </div>
+            <div class="admin-user">
+                <span>Admin User</span>
+                <img src="assets/user.png" alt="Admin Avatar">
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Navigation -->
+    <nav class="admin-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Dashboard Overview -->
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-title">Total Users</span>
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="card-value">1,234</div>
+                <div class="card-trend">+12% from last month</div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-title">Total Products</span>
+                    <i class="fas fa-box"></i>
+                </div>
+                <div class="card-value">567</div>
+                <div class="card-trend">+5% from last month</div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-title">Total Orders</span>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="card-value">89</div>
+                <div class="card-trend negative">-3% from last month</div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-title">Revenue</span>
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="card-value">$12,345</div>
+                <div class="card-trend">+8% from last month</div>
+            </div>
+        </div>
+
+        <!-- Recent Users -->
+        <div class="data-table">
+            <div class="table-header">
+                <h2 class="table-title">Recent Users</h2>
+                <div class="table-actions">
+                    <button class="btn btn-secondary">Export</button>
+                    <button class="btn btn-primary">Add User</button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>Customer</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Jane Smith</td>
+                            <td>jane@example.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Recent Products -->
+        <div class="data-table">
+            <div class="table-header">
+                <h2 class="table-title">Recent Products</h2>
+                <div class="table-actions">
+                    <button class="btn btn-secondary">Export</button>
+                    <button class="btn btn-primary">Add Product</button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>MSI MPG Trident 3</td>
+                            <td>Desktop PCs</td>
+                            <td>$3,299.00</td>
+                            <td>15</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>MSI Pro 16 Flex</td>
+                            <td>Laptops</td>
+                            <td>$499.00</td>
+                            <td>8</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add User Modal -->
+    <div class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Add New User</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" class="form-control">
+                        <option value="customer">Customer</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add User</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Product Modal -->
+    <div class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Add New Product</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" class="form-control">
+                        <option value="laptops">Laptops</option>
+                        <option value="desktops">Desktop PCs</option>
+                        <option value="parts">PC Parts</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" id="price" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" class="form-control" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Product Image</label>
+                    <input type="file" id="image" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>Nesterenko © 2025 HardwareBase.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

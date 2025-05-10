@@ -1,0 +1,156 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 15px 0;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li {
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "›";
+    margin: 0 10px;
+    color: #999;
+}
+
+.breadcrumb a {
+    color: #333;
+}
+
+.breadcrumb a:hover {
+    color: #0066ff;
+}
+
+/* Main content */
+main {
+    padding: 20px 0 60px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.login-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.login-box {
+    flex: 1;
+    background-color: #f8f9fd;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.login-box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.required {
+    color: red;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.forgot-password {
+    color: #0066ff;
+    font-size: 14px;
+}
+
+.login-box ul {
+    margin: 20px 0 30px 20px;
+    list-style: disc;
+}
+
+.login-box ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.create-account {
+    display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .login-container {
+        flex-direction: column;
+    }
+}

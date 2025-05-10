@@ -1,0 +1,166 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Main Content */
+main {
+    padding: 30px 0 60px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #222;
+}
+
+.registration-container {
+    display: flex;
+    gap: 30px;
+}
+
+.registration-form, .registration-info {
+    flex: 1;
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.required {
+    color: red;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #0052cc;
+}
+
+.registration-info p {
+    margin-bottom: 15px;
+}
+
+.registration-info ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.registration-info li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.registration-info li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0066ff;
+}
+
+.login-section {
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .registration-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 15px 0;
+    background-color: #fff;
+}
+
+.breadcrumb ul {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li {
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "›";
+    margin: 0 10px;
+    color: #999;
+}
+
+.breadcrumb a {
+    color: #333;
+}
+
+.breadcrumb a:hover {
+    color: #0066ff;
+}

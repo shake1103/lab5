@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Computer Hardware Store</title>
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/login-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-logo">
+                <a href="index.html" style="margin-right: 20px;">
+                    <img src="assets/logo.png" alt="HardwareBase Logo" style="height:32px;">
+                </a>
+                <span>Mon-Sat: 9:00 AM - 5:30 PM</span> &nbsp;|&nbsp; <span>Call us: (00) 1234 5678</span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header">
+        <button class="hamburger-menu" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="mobile-search-bar">
+            <input type="text" placeholder="Search here...">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="mobile-header-right">
+            <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+            <a href="login.html" class="account"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+    <nav class="mobile-menu" aria-label="Mobile menu">
+        <div class="mobile-menu-navbar">
+            <div class="mobile-search-bar">
+                <input type="text" placeholder="Search here...">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+            <a href="login.html" class="account"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="HardwareBase Logo">
+                <span>HardwareBase</span>
+            </div>
+            <button class="close-mobile-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu-list">
+            <li><a href="catalog.html">Laptops <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Desktop PCs <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Networking Devices <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Printers & Scanners <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">PC Parts <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">All Other Products <span class="menu-arrow">&rsaquo;</span></a></li>
+        </ul>
+    </nav>
+    <!-- Include Navbar -->
+    <!-- Top Bar (mobile: logo + info) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="HardwareBase Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="catalog.html">Laptops</a></li>
+                    <li><a href="catalog.html">Desktop PCs</a></li>
+                    <li><a href="catalog.html">Networking Devices</a></li>
+                    <li><a href="catalog.html">Printers & Scanners</a></li>
+                    <li><a href="catalog.html">PC Parts</a></li>
+                    <li><a href="catalog.html">All Other Products</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count">2</span>
+                </div>
+                <div class="account">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb container">
+        <a href="index.html">Home</a> > Login
+    </div>
+
+    <main class="container">
+        <h1>Customer Login</h1>
+
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Registered Customers</h2>
+                <p>If you have an account, sign in with your email address.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Sign In</button>
+                        <a href="#" class="forgot-password">Forgot Your Password?</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-box">
+                <h2>New Customer?</h2>
+                <p>Creating an account has many benefits:</p>
+                <ul>
+                    <li>Check out faster</li>
+                    <li>Track orders</li>
+                    <li>Wishlist and more</li>
+                </ul>
+                <a href="register.html" class="btn-primary create-account">Create An Account</a>
+            </div>
+        </div>
+    </main>
+   
+    <!-- Include Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Orders and Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>PC Parts</h3>
+                    <ul>
+                        <li><a href="catalog.html">CPUs</a></li>
+                        <li><a href="catalog.html">Add On Cards</a></li>
+                        <li><a href="catalog.html">Hard Drives (Internal)</a></li>
+                        <li><a href="catalog.html">Graphic Cards</a></li>
+                        <li><a href="catalog.html">Keyboards / Mice</a></li>
+                        <li><a href="catalog.html">Cases / Power Supplies / Cooling</a></li>
+                        <li><a href="catalog.html">RAM (Memory)</a></li>
+                        <li><a href="catalog.html">Software</a></li>
+                        <li><a href="catalog.html">Speakers / Headsets</a></li>
+                        <li><a href="catalog.html">Motherboards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Desktop PCs</h3>
+                    <ul>
+                        <li><a href="catalog.html">Custom PCs</a></li>
+                        <li><a href="catalog.html">Servers</a></li>
+                        <li><a href="catalog.html">MSI All-In-One PCs</a></li>
+                        <li><a href="catalog.html">HP/Compaq PCs</a></li>
+                        <li><a href="catalog.html">ASUS PCs</a></li>
+                        <li><a href="catalog.html">Tecs PCs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Laptops</h3>
+                    <ul>
+                        <li><a href="catalog.html">Everyday Use Notebooks</a></li>
+                        <li><a href="catalog.html">MSI Workstation Series</a></li>
+                        <li><a href="catalog.html">MSI Prestige Series</a></li>
+                        <li><a href="catalog.html">Tablets and Pads</a></li>
+                        <li><a href="catalog.html">Netbooks</a></li>
+                        <li><a href="catalog.html">Infinity Gaming Notebooks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Address</h3>
+                    <p>Address: 1234 Street Address City Address, 1234</p>
+                    <p>Phones: <a href="tel:0012345678">(00) 1234 5678</a></p>
+                    <p>We are open: Monday-Saturday: 9:00 AM - 5:30 PM</p>
+                    <p>E-mail: <a href="mailto:hardwarebase@gmail.com">hardwarebase@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>Nesterenko © 2025 HardwareBase.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

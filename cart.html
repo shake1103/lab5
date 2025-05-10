@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Computer Hardware Store</title>
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/cart-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-logo">
+                <a href="index.html" style="margin-right: 20px;">
+                    <img src="assets/logo.png" alt="HardwareBase Logo" style="height:32px;">
+                </a>
+                <span>Mon-Sat: 9:00 AM - 5:30 PM</span> &nbsp;|&nbsp; <span>Call us: (00) 1234 5678</span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header">
+        <button class="hamburger-menu" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="mobile-search-bar">
+            <input type="text" placeholder="Search here...">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="mobile-header-right">
+            <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+            <a href="login.html" class="account"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+    <nav class="mobile-menu" aria-label="Mobile menu">
+        <div class="mobile-menu-navbar">
+            <div class="mobile-search-bar">
+                <input type="text" placeholder="Search here...">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+            <a href="login.html" class="account"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="HardwareBase Logo">
+                <span>HardwareBase</span>
+            </div>
+            <button class="close-mobile-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu-list">
+            <li><a href="catalog.html">Laptops <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Desktop PCs <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Networking Devices <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">Printers & Scanners <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">PC Parts <span class="menu-arrow">&rsaquo;</span></a></li>
+            <li><a href="catalog.html">All Other Products <span class="menu-arrow">&rsaquo;</span></a></li>
+        </ul>
+    </nav>
+    <!-- Include Navbar -->
+    <!-- Top Bar (mobile: logo + info) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="HardwareBase Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="catalog.html">Laptops</a></li>
+                    <li><a href="catalog.html">Desktop PCs</a></li>
+                    <li><a href="catalog.html">Networking Devices</a></li>
+                    <li><a href="catalog.html">Printers & Scanners</a></li>
+                    <li><a href="catalog.html">PC Parts</a></li>
+                    <li><a href="catalog.html">All Other Products</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count">2</span>
+                </div>
+                <div class="account">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > Shopping Cart
+            </div>
+
+            <h1>Shopping Cart</h1>
+
+            <div class="cart-container">
+                <div class="cart-items">
+                    <!-- Desktop Table View -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="item-col">Item</th>
+                                <th class="price-col">Price</th>
+                                <th class="amount-col">Amount</th>
+                                <th class="subtotal-col">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Item 1 -->
+                            <tr>
+                                <td class="item-details">
+                                    <div class="item-image">
+                                        <img src="assets/placeholder.jpg" alt="MSI MEG Trident X">
+                                    </div>
+                                    <div class="item-info">
+                                        <p>MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty</p>
+                                    </div>
+                                </td>
+                                <td class="price">$4,349.00</td>
+                                <td class="amount">
+                                    <div class="quantity-selector">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="subtotal">
+                                    <div class="subtotal-price">$13,047.00</div>
+                                    <div class="item-actions">
+                                        <button class="remove-btn"><i class="fas fa-times"></i></button>
+                                        <button class="edit-btn"><i class="fas fa-pen"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Item 2 -->
+                            <tr>
+                                <td class="item-details">
+                                    <div class="item-image">
+                                        <img src="assets/placeholder.jpg" alt="MSI MEG Trident X">
+                                    </div>
+                                    <div class="item-info">
+                                        <p>MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty</p>
+                                    </div>
+                                </td>
+                                <td class="price">$4,349.00</td>
+                                <td class="amount">
+                                    <div class="quantity-selector">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="subtotal">
+                                    <div class="subtotal-price">$13,047.00</div>
+                                    <div class="item-actions">
+                                        <button class="remove-btn"><i class="fas fa-times"></i></button>
+                                        <button class="edit-btn"><i class="fas fa-pen"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Mobile Card View -->
+                    <div class="cart-item-cards">
+                        <!-- Item 1 -->
+                        <div class="cart-item-card">
+                            <div class="cart-item-header">
+                                <div class="cart-item-image">
+                                    <img src="assets/placeholder.jpg" alt="MSI MEG Trident X">
+                                </div>
+                                <div class="cart-item-info">
+                                    <p>MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty</p>
+                                    <div class="cart-item-price">$4,349.00</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="1" readonly>
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="remove-btn"><i class="fas fa-times"></i></button>
+                                    <button class="edit-btn"><i class="fas fa-pen"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="cart-item-card">
+                            <div class="cart-item-header">
+                                <div class="cart-item-image">
+                                    <img src="assets/placeholder.jpg" alt="MSI MEG Trident X">
+                                </div>
+                                <div class="cart-item-info">
+                                    <p>MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty</p>
+                                    <div class="cart-item-price">$4,349.00</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="1" readonly>
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="remove-btn"><i class="fas fa-times"></i></button>
+                                    <button class="edit-btn"><i class="fas fa-pen"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-actions">
+                        <button class="continue-shopping" onclick="window.location.href='catalog.html'">Continue Shopping</button>
+                        <button class="clear-cart">Clear Shopping Cart</button>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h2>Summary</h2>
+                    
+                    <div class="summary-section">
+                        <div class="summary-header">
+                            <h3>Estimate Shipping and Tax</h3>
+                            <span class="toggle-icon">-</span>
+                        </div>
+                        <div class="summary-content">
+                            <p>Enter your destination to get a shipping estimate.</p>
+                            
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <div class="select-wrapper">
+                                    <select id="country">
+                                        <option value="ukraine">Ukraine</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="state">State/Province</label>
+                                <input type="text" id="state">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="zip">Zip/Postal Code</label>
+                                <input type="text" id="zip">
+                            </div>
+                            
+                            <div class="shipping-options">
+                                <h4>Standard Rate</h4>
+                                <div class="radio-option">
+                                    <input type="radio" id="standard-rate" name="shipping-method" checked>
+                                    <label for="standard-rate">
+                                        <span>Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="pickup-option">
+                                <h4>Pickup from store</h4>
+                                <p>1234 Street Address City Address, 1234 $0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span class="price">$13,047.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping</span>
+                            <span class="price">$21.00</span>
+                        </div>
+                        <div class="shipping-note">Standard Rate - Price may vary depending on the item/destination. Shop Staff will contact you.</div>
+                        <div class="total-row">
+                            <span>Tax</span>
+                            <span class="price">$1.91</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Order Total</span>
+                            <span class="price">$13,069.91</span>
+                        </div>
+                    </div>
+                    
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>Nesterenko © 2025 HardwareBase.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
